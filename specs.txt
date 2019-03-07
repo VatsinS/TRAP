@@ -1,0 +1,4 @@
+Protocol
+
+Arduino sends: 
+Elbow (base), Wrist, 5 Fingers

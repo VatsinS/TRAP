@@ -1,0 +1,19 @@
+{
+    "base":{
+        "x":"value1", "y":"value2", "z":"value3"
+    },
+    "arm":{
+        "x":"value1", "y":"value2", "z":"value3"
+    },
+    "fingers":{
+        "1":{
+            "x":"value1", "y":"value2", "z":"value3"
+        },
+        "2":{
+            "x":"value1", "y":"value2", "z":"value3"
+        },
+        "3":{
+            "x":"value1", "y":"value2", "z":"value3"
+        }
+    }
+}
