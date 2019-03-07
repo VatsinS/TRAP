@@ -5,6 +5,9 @@
     "arm":{
         "x":"value1", "y":"value2", "z":"value3"
     },
+    "palm":{
+        "x":"value1", "y":"value2", "z":"value3"
+    },
     "fingers":{
         "1":{
             "x":"value1", "y":"value2", "z":"value3"
@@ -13,6 +16,12 @@
             "x":"value1", "y":"value2", "z":"value3"
         },
         "3":{
+            "x":"value1", "y":"value2", "z":"value3"
+        },
+        "4":{
+            "x":"value1", "y":"value2", "z":"value3"
+        },
+        "5":{
             "x":"value1", "y":"value2", "z":"value3"
         }
     }
