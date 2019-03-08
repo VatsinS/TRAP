@@ -13,14 +13,15 @@ def index():
 def api():
     if request.method == "POST":
         sample_var = request.form["base"]
+        print(sample_var)
         return sample_var
     
-    return 400
+    return "Plz use POST"
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
 
-plt.axis([0, 10, 0, 1])
+#plt.axis([0, 10, 0, 1])
 
 """
 Sample code for plotting. 
