@@ -82,4 +82,4 @@ while(True):
 
     request_str = {"base":{"x":x_post}}
 
-    requests.post(url, params=json.dumps(request_str))
+    requests.post(url, json=json.dumps(request_str))
