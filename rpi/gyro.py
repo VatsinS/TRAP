@@ -3,6 +3,7 @@ import smbus
 import math
 import requests
 import json
+import time
 
 #POST URL
 url="http://192.168.43.115:5000/api/"
@@ -80,6 +81,7 @@ while(True):
     x_post = get_x_rotation(beschleunigung_xout_skaliert, beschleunigung_yout_skaliert, beschleunigung_zout_skaliert)
     y_post = get_y_rotation(beschleunigung_xout_skaliert, beschleunigung_yout_skaliert, beschleunigung_zout_skaliert)
 
-    request_str = {"base":{"x":x_post}}
+    request_str = {"base":{"x":x_post,"y":y_post}}
 
     requests.post(url, json=json.dumps(request_str))
+    time.sleep(1)
