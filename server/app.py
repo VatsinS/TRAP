@@ -1,6 +1,8 @@
 from flask import Flask, render_template, jsonify, request
 import numpy as np
 import matplotlib.pyplot as plt
+import json
+import time
 
 app = Flask(__name__)
 
@@ -13,8 +15,14 @@ def index():
 def api():
     if request.method == "POST":
         sample_var = request.get_json(force=True)
-        print(type(sample_var))
+        
         print(sample_var)
+        sample_var = json.loads(sample_var)
+        data = sample_var["base"]
+        i = data["x"]
+        y = data["y"]
+        plt.scatter(int(i),int(y))
+        plt.show()
         return "ok!"
     
     return "Plz use POST"
