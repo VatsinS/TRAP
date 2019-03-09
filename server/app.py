@@ -12,7 +12,8 @@ def index():
 @app.route('/api/', methods = ['POST','GET'])
 def api():
     if request.method == "POST":
-        sample_var = request.form["base"]
+        sample_var = request.get_json(force=True)
+        print(type(sample_var))
         print(sample_var)
         return sample_var
     

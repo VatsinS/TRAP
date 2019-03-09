@@ -80,6 +80,6 @@ while(True):
     x_post = get_x_rotation(beschleunigung_xout_skaliert, beschleunigung_yout_skaliert, beschleunigung_zout_skaliert)
     y_post = get_y_rotation(beschleunigung_xout_skaliert, beschleunigung_yout_skaliert, beschleunigung_zout_skaliert)
 
-    request_str = {'base':{ 'x':x_post}}
+    request_str = {'base':{'x':x_post}}
 
     requests.post(url, params=json.dumps(request_str))
