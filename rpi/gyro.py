@@ -2,9 +2,10 @@
 import smbus
 import math
 import requests
+import json
 
 #POST URL
-url="192.168.43.115:5000/api/"
+url="http://192.168.43.115:5000/api/"
 
 #PI_URL = "192.168.43.215"
  
@@ -79,4 +80,6 @@ while(True):
     x_post = get_x_rotation(beschleunigung_xout_skaliert, beschleunigung_yout_skaliert, beschleunigung_zout_skaliert)
     y_post = get_y_rotation(beschleunigung_xout_skaliert, beschleunigung_yout_skaliert, beschleunigung_zout_skaliert)
 
-    requests.post(url, params={'base': {'x':str(x_post),'y':str(y_post)}})
+    request_str = {'base':{ 'x':x_post}}
+
+    requests.post(url, params=json.dumps(request_str))
