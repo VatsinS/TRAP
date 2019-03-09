@@ -4,7 +4,7 @@ import math
 import requests
 
 #POST URL
-url="192.168.43.115/api/:5000"
+url="192.168.43.115:5000/api/"
 
 #PI_URL = "192.168.43.215"
  
