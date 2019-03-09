@@ -15,7 +15,7 @@ def api():
         sample_var = request.get_json(force=True)
         print(type(sample_var))
         print(sample_var)
-        return sample_var
+        return "ok!"
     
     return "Plz use POST"
 
